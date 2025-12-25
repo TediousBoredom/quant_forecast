@@ -1,0 +1,46 @@
+{
+  "model": {
+    "latent_channels": 16,
+    "num_embeddings": 8192,
+    "embedding_dim": 512,
+    "hidden_dim": 1024,
+    "num_layers": 12,
+    "num_heads": 16,
+    "dropout": 0.0,
+    "max_frames": 64
+  },
+  "diffusion": {
+    "num_train_timesteps": 1000,
+    "min_step": 50,
+    "max_step": 950,
+    "beta_schedule": "linear"
+  },
+  "training": {
+    "num_epochs": 100,
+    "num_samples": 50000,
+    "batch_size": 4,
+    "learning_rate": 0.0002,
+    "beta1": 0.0,
+    "beta2": 0.999,
+    "weight_decay": 0.0,
+    "max_grad_norm": 1.0,
+    "gradient_accumulation_steps": 2,
+    "warmup_steps": 500,
+    "quantization_weight": 0.1,
+    "num_workers": 8
+  },
+  "data": {
+    "num_frames": 16,
+    "latent_height": 32,
+    "latent_width": 32
+  },
+  "logging": {
+    "use_wandb": true,
+    "project_name": "quantized-diffusion-dmd",
+    "run_name": "dmd_optimized_v1",
+    "log_interval": 50,
+    "save_interval": 1000,
+    "max_checkpoints": 5
+  },
+  "output_dir": "./outputs/quantized_dmd_optimized"
+}
