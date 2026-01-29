@@ -1,7 +1,9 @@
-# Quantized Diffusion Model for Video Generation
+# Quantized Diffusion Model
 # 基于 Diffusion 的量化预测模型
 
-这是一个基于 Diffusion 和 Distribution Matching Distillation (DMD) 的量化预测模型，用于高效的视频生成。
+这是一个基于 Diffusion 的量化预测模型
+
+not Quantized but finance forecast
 
 ## 📋 目录结构
 
